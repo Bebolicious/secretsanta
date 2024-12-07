@@ -19,7 +19,7 @@ function Login({ onLogin, pickers }) {
   return (
     <Container maxWidth="sm">
       <Box display="flex" flexDirection="column" gap={2}>
-        <Typography variant="h4" component="h1" gutterBottom color="red">
+        <Typography variant="h2" component="h1" gutterBottom color="red">
           Vem är det som traskar in i stugan min?
         </Typography>
 
@@ -31,7 +31,7 @@ function Login({ onLogin, pickers }) {
         <form onSubmit={handleSubmit}>
           <TextField
             sx={{borderColor: 'red'}}
-            label="Name"
+            label="Ditt namn"
             variant="outlined"
             fullWidth
             margin="normal"
@@ -41,7 +41,7 @@ function Login({ onLogin, pickers }) {
             InputProps={{ style: { color: 'red' } }}
           />
           <Button type="submit" variant="contained" color="primary" fullWidth sx={{ color: 'red', backgroundColor: '#fff' }}>
-            Login
+            Logga in
           </Button>
         </form>
       </Box>

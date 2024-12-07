@@ -63,8 +63,8 @@ function Home({ picker, pickers }) {
           {pickerGreeting(picker)}
         </Typography>
         {!hasGiven ? (
-          <Button variant="contained" color="primary" sx={{ color: 'red' }} onClick={handleButtonClick}>
-            Vem är du secret santa för?
+          <Button variant="contained" color="primary" sx={{ color: 'red', backgroundColor: '#fff', textTransform: 'none' }} onClick={handleButtonClick}>
+            Bli en Secret Santa
           </Button>
         ) : (
           <Typography variant="h2" component="h2" gutterBottom color="red">
